@@ -1,0 +1,35 @@
+import React, { Component } from 'react'
+import {Link} from 'react-router-dom';
+
+class DashBoard extends Component {
+  render () {
+    return (
+      <div className='container-dashboard'>
+        <section className='content-section'>
+          <div className='title-page'>
+            <h1>FonYou's dashboard</h1>
+          </div>
+          <div className='container-cards'>
+            <Link to={'/employee/new'}>
+            <div className='cards card-1'>
+              <h2>Create employee</h2>
+            </div>
+            </Link>
+            <Link to={'/employee/'}>
+            <div className='cards card-2'>
+              <h2>Employee list</h2>
+            </div>
+            </Link>
+            <Link to={'/employee/search'}>
+            <div className='cards card-3'>
+              <h2>Search employee</h2>
+            </div>
+            </Link>
+          </div>
+        </section>
+      </div>
+    )
+  }
+}
+
+export default DashBoard

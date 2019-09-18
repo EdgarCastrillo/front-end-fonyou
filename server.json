@@ -1,0 +1,18 @@
+{
+  "employees": [
+    {
+      "name": "Edgarito",
+      "surname": "Castrillo",
+      "workArea": "frontend",
+      "email": "edgar@edgar.com",
+      "id": "1"
+    },
+    {
+      "name": "juanito",
+      "surname": "lalal",
+      "workArea": "management",
+      "email": "EDG@SDD.COM",
+      "id": "goGzkkA"
+    }
+  ]
+}

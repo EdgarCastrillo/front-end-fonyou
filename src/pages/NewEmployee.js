@@ -33,48 +33,55 @@ export default class NewEmployee extends Component {
 
     return (
       <div className='container-dashboard'>
-        <form onSubmit={this.handleFormSubmit}>
-            <input 
-              id='name' 
-              type='text' 
-              name='name' 
-              value={name} 
-              placeholder='name'
-              onChange={this.handleChange}
-            />
-            <input 
-              id='surname' 
-              type='text' 
-              name='surname' 
-              value={surname} 
-              placeholder='surname'
-              onChange={this.handleChange}
-            />
-            <div className='select'>
-              <select id='workArea' name='workArea' onChange={this.handleChange}>
-                <option value='workArea'>-- your work area --</option>
-                <option value='administration'>Administration</option>
-                <option value='backend'>Backend</option>
-                <option value='frontend'>Frontend</option>
-                <option value='management'>Management</option>
-                <option value='marketing'>Marketing</option>
-              </select>
-              <div className="select_arrow"></div>
-            </div>
-            <input 
-              id='email' 
-              type='text' 
-              name='email' 
-              value={email} 
-              placeholder='email'
-              onChange={this.handleChange}
-            />
-            <button 
-            className='btn-primary' 
-            type='submit' 
-            disabled={ !name || !surname || !workArea || !email }
-            >Crear Usuario</button>
-          </form>
+        <section className='content-section'>
+          <div className='title-page'>
+            <h1>Create Employee</h1>
+          </div>
+          <div className='container-form'>
+            <form className="form-content" onSubmit={this.handleFormSubmit}>
+              <input 
+                id='name' 
+                type='text' 
+                name='name' 
+                value={name} 
+                placeholder='name'
+                onChange={this.handleChange}
+              />
+              <input 
+                id='surname' 
+                type='text' 
+                name='surname' 
+                value={surname} 
+                placeholder='surname'
+                onChange={this.handleChange}
+              />
+              <div className='select'>
+                <select id='workArea' name='workArea' onChange={this.handleChange}>
+                  <option value='workArea'>-- your work area --</option>
+                  <option value='administration'>Administration</option>
+                  <option value='backend'>Backend</option>
+                  <option value='frontend'>Frontend</option>
+                  <option value='management'>Management</option>
+                  <option value='marketing'>Marketing</option>
+                </select>
+                <div className="select_arrow"></div>
+              </div>
+              <input 
+                id='email' 
+                type='text' 
+                name='email' 
+                value={email} 
+                placeholder='email'
+                onChange={this.handleChange}
+              />
+              <button 
+              className='btn-primary' 
+              type='submit' 
+              disabled={ !name || !surname || !workArea || !email }
+              >Crear Usuario</button>
+            </form>
+          </div>
+        </section>
       </div>
     )
   }

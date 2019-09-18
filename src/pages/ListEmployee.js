@@ -34,8 +34,14 @@ export default class ListEmployee extends Component {
     const {employees} = this.state
     return (
       <div className='container-dashboard'>
-        <h1>Listado de empleados</h1>
-        {employees ? this.renderEmployees() : <p>Cargando...</p>}
+        <section className='content-section'>
+          <div className='title-page'>
+            <h1>Create Employee</h1>
+          </div>
+          <div className='container-list'>
+            {employees ? this.renderEmployees() : <p>Cargando...</p>}
+          </div>
+        </section>
       </div>
     )
   }

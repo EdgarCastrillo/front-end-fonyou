@@ -1,12 +1,3 @@
-// import Axios from 'axios'
-
-// export default class employeService {
-//   getAllEmployees() {
-//     console.log('estoy en el serviceee');
-//     let employe = Axios.get('http://localhost:3000/employees')
-//   }
-// }
-
 import axios from 'axios';
 
 class EmployeeService {

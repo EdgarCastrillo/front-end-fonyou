@@ -8,12 +8,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
-
-div#root {
   background-color: #ececec;
 }
-
 
 /* ---- typography ---- */
 
@@ -41,7 +37,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  line-height: 2.8rem;
+  line-height: 2rem;
   font-weight: 300;
   margin: 0;
 }
@@ -108,9 +104,55 @@ button {
   background-color: #FF865A;
   border: 1px solid rgb(247, 117, 70);
   font-size: 1.25rem;
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
+  cursor:pointer;
+  text-decoration:none;
+}
+button:hover {
+  transform: scale(1.02);
+  transition: all .2s ease-in-out;
 }
 
+button:focus {
+  outline: none;
+}
+
+.btn-update {
+  width: 60%;
+  padding: 0px 15px;
+  height: 35px;
+  font-size: 16px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid black;
+  border-radius: 30px;   
+  color: black;
+}
+
+
+@media (min-width: 768px) {
+  .btn-update {
+    width: 50%;;
+  }
+}
+
+.btn-delete {
+  width: 60%;
+  padding: 0px 15px;
+  height: 35px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(211, 70, 70);
+  border-radius: 30px;   
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .btn-delete {
+    width: 50%;;
+  }
+}
 /* ---- Form ---- */
 
 form.form-content {
@@ -128,7 +170,7 @@ input {
   border: 1px solid black;
   border-radius: 30px;   
   color: black;
-
+  cursor:pointer;
 }
 
 input::placeholder {
@@ -382,4 +424,66 @@ input:focus {
     transition: all .3s ease-in-out;
   }
 
+}
+
+.cards-employee {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 10px #0000001e;
+}
+
+.border {
+  border-bottom: 1px solid #a9a9a9;
+  margin: 10px 0 10px 0;
+}
+
+@media (min-width: 768px) {
+  .container-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  .cards-employee {
+    width: 48%;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 10px #0000001e;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+  .cards-employee {
+    width: 30%;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px #0000001e;
+  }
+}
+
+
+/* ---- Search ---- */
+
+.result {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }

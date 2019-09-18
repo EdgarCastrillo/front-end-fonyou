@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-
 import DashBoard from './pages/DashBoard'
 import ListEmployees from './pages/ListEmployee'
 import NewEmployee from './pages/NewEmployee'

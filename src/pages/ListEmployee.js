@@ -10,7 +10,6 @@ export default class ListEmployee extends Component {
 
   async componentDidMount() {
     try {
-      console.log('cdm')
       let employees = await employeeService.getAllEmployees();
       this.setState({
         employees: employees.data
@@ -36,10 +35,10 @@ export default class ListEmployee extends Component {
       <div className='container-dashboard'>
         <section className='content-section'>
           <div className='title-page'>
-            <h1>Create Employee</h1>
+            <h1>List of Employees</h1>
           </div>
           <div className='container-list'>
-            {employees ? this.renderEmployees() : <p>Cargando...</p>}
+            {employees ? this.renderEmployees() : <p>Loading...</p>}
           </div>
         </section>
       </div>

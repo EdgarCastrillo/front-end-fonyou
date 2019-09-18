@@ -1,25 +1,60 @@
 {
   "employees": [
     {
-      "name": "Edgarito",
-      "surname": "Castrillo",
-      "workArea": "frontend",
-      "email": "edgar@edgar.com",
+      "name": "Carlos",
+      "surname": "Fernández Navarro",
+      "workArea": "Frontend",
+      "email": "carlos@fonyou.com",
       "id": "1"
     },
     {
-      "name": "juanito",
-      "surname": "lalal",
+      "name": "Marta",
+      "surname": "Rodríguez Gómez",
+      "workArea": "backend",
+      "email": "marta@fonyou.com",
+      "id": "2"
+    },
+    {
+      "name": "Laura",
+      "surname": "García Navarro",
+      "workArea": "marketing",
+      "email": "laura@fonyou.com",
+      "id": "3"
+    },
+    {
+      "name": "Marc",
+      "surname": "Ruiz Aguirre",
+      "workArea": "marketing",
+      "email": "marc@fonyou.com",
+      "id": "4"
+    },
+    {
+      "name": "Joan",
+      "surname": "Gutiérrez Romero",
       "workArea": "management",
-      "email": "EDG@SDD.COM",
-      "id": "goGzkkA"
+      "email": "joan@fonyou.com",
+      "id": "5"
     },
     {
       "name": "Claudia",
-      "surname": "Garcia",
+      "surname": "Ortiz Pérez",
       "workArea": "administration",
-      "email": "claudia@cl.com",
-      "id": "d1rDLv6"
+      "email": "claudia@fonyou.com",
+      "id": "6"
+    },
+    {
+      "name": "Lucas",
+      "surname": "Sánchez Torres",
+      "workArea": "backend",
+      "email": "carlos@fonyou.com",
+      "id": "7"
+    },
+    {
+      "name": "Lidia",
+      "surname": "Muñoz Ponce",
+      "workArea": "administration",
+      "email": "carlos@fonyou.com",
+      "id": "8"
     }
   ]
 }

@@ -12,14 +12,13 @@ export default class NewEmployee extends Component {
 
   handleFormSubmit = async (event) => {
     event.preventDefault();
-      console.log('editar');
       const name = this.state.name;
       const surname = this.state.surname;
       const workArea = this.state.workArea;
       const email = this.state.email;
       let newEmployee = {name,surname,workArea,email}
       await employeeService.createEmployee(newEmployee);
-      this.props.history.push('/');
+      this.props.history.push('/employee');
     }
 
 
@@ -78,7 +77,7 @@ export default class NewEmployee extends Component {
               className='btn-primary' 
               type='submit' 
               disabled={ !name || !surname || !workArea || !email }
-              >Crear Usuario</button>
+              >Create Employee</button>
             </form>
           </div>
         </section>

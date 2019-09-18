@@ -22,7 +22,6 @@ export default class CardEmployee extends Component {
   handleFormSubmit = async (event) => {
     event.preventDefault();
     if(this.state.isEdit) {
-      console.log('editar');
       const name = this.state.name;
       const surname = this.state.surname;
       const workArea = this.state.workArea;
@@ -58,8 +57,7 @@ export default class CardEmployee extends Component {
     const {name, surname, email, workArea, isEdit} = this.state;
   
       return(
-        <div>
-
+        <div className="cards-employee">
           <form onSubmit={this.handleFormSubmit}>
             {isEdit ? <input 
               id='name' 
@@ -77,6 +75,7 @@ export default class CardEmployee extends Component {
               placeholder='surname'
               onChange={this.handleChange}
             /> : <h3>{surname}</h3>}
+            <div className="border"></div>
             {isEdit ? <div className='select'>
               <select id='workArea' name='workArea' onChange={this.handleChange}>
                 <option value='workArea'>-- your work area --</option>
@@ -87,7 +86,7 @@ export default class CardEmployee extends Component {
                 <option value='marketing'>Marketing</option>
               </select>
               <div className="select_arrow"></div>
-            </div> : <h3>{workArea}</h3>}
+            </div> : <p>{workArea}</p>}
             {isEdit ? <input 
               id='email' 
               type='text' 
@@ -95,18 +94,18 @@ export default class CardEmployee extends Component {
               value={email} 
               placeholder='email'
               onChange={this.handleChange}
-            /> : <h3>{email}</h3>}
+            /> : <p>{email}</p>}
             <button 
-              className='btn-primary' 
+              className='btn-update' 
               type='submit' 
               disabled={ !name || !surname || !workArea || !email }
-              >{isEdit ? 'Aceptar' : 'Editar'}</button>
+              >{isEdit ? 'Accept' : 'Edit'}</button>
                 </form>
                 <button 
-              className='btn-secundary' 
+              className='btn-delete' 
               type='submit' 
               onClick={()=>this.handleDelete()}
-              >Borrar</button>
+              >Delete</button>
         </div>
       )
   }

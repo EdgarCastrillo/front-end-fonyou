@@ -17,7 +17,7 @@ class DashBoard extends Component {
             </Link>
             <Link to={'/employee/'}>
             <div className='cards card-2'>
-              <h2>Employees List</h2>
+              <h2>List of Employees</h2>
             </div>
             </Link>
             <Link to={'/employee/search'}>
